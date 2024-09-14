@@ -1,0 +1,46 @@
+{
+  "projects": [
+    {
+      "title": "مار-بازی کلاسیک",
+      "description": "با بازی مار در گوشی های نوکیا حتماً خاطره دارید میتوانید در لینک بالا بازی کنید و لذت ببرید. در این پروژه سعی شده است که کد تمیز،قابل فهم و قابلیت استفاده مجدد باشد. در این پروژه به از هیچ کتابخانه یا جز از پیش آماده ای استفاده نشده است و کل منطق بازی را خود من نوشته ام. از ویژگی خوب بازی میتوان به داشتن صدا و قابل بازی در موبایل های هوشمند اشاره کرد.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "link": "https://snake-game-khaki-eta.vercel.app/",
+      "code": "https://github.com/erufan/snake_game"
+    },
+    {
+      "title": "وب سایت هواشناسی",
+      "description": "سایت اعلام وضعیت آب و هوا فعلی و پیش بینی سه روز بعدی. کمیت هایی از جمله میزان درصد بارش، سرعت باد،رطوبت ، دما و وضعیت آسمان. از ویژگی های سایت میتوان به طراحی ریسپانسیو، وجود انیمشین برای آیکون ها، حفظ پرفورمنس با وجود انیمیشن، حتی بعد از چند بار ری رندر کردن و سرچ شهر ها، پشتیبانی از همه شهر ها، تکمیل خودکار(autocomplete) شهرها اشاره کرد.",
+      "technologies": ["HTML", "CSS", "JavaScript", "API"],
+      "link": "https://checkerfanweather.netlify.app/",
+      "code": "https://github.com/erufan/weather-app"
+    },
+    {
+      "title": "ماشین حساب",
+      "description": "انجام چهار عمل اصلی ضرب،تقسیم،جمع و تفریق با قابلیت های رعایت ترتیب های چهار عمل اصلی به صورت خودکار به کار بردن مجدد جواب در محاسبات.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "link": "https://iridescent-selkie-507e3d.netlify.app/",
+      "code": "https://github.com/erufan/calculator"
+    },
+    {
+      "title": "تغییر وضعیت دارک مود",
+      "description": "دکمه ی خورشید و ماه برای تغییر دارک مود. کاری تفننی که صرفاً به جهت شبیه سازی هوک useState و react با وانیلا جاوا اسکریپت نوشته شده است. جز خلاقیت فردی ویژگی خاص دیگری ندارد.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "link": "https://moon-sun-form.netlify.app/",
+      "code": "https://github.com/erufan/moon-sun-form"
+    },
+    {
+      "title": "وب سایت بازی",
+      "description": "سایت نمایش بازی قابلیت فیلتر بر اساس ژانر و مرتب کردن بر اساس [تاریخ انتشار، محبوبیت، الفبا، پلتفورم]. این یک پروژه PBL است.",
+      "technologies": ["HTML", "CSS", "JavaScript", "API"],
+      "link": "https://sage-starship-958dd0.netlify.app/",
+      "code": "https://github.com/erufan/game-hubs"
+    },
+    {
+      "title": "وب سایت issue-tracker _ مانند جیرا",
+      "description": "سایت ردیاب مسئله(issue) یک سایت مدیریت تیکت میباشد. این یک پروژه PBL است.",
+      "technologies": ["HTML", "CSS", "JavaScript", "API"],
+      "link": "https://issue-tracker-black-two.vercel.app/",
+      "code": "https://github.com/erufan/issue-tracker"
+    }
+  ]
+}
