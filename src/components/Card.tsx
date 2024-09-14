@@ -14,8 +14,7 @@ const Card = ({ title, image, description, code, link }: Props) => {
       <div className={style.imageContainer}>
         <img src={image} alt={title} />
       </div>
-      {/*fix alt later */}
-      <h2>{title}</h2>
+      <h2 className={style.title}>{title}</h2>
       <p>{description}</p>
       <a href={code} target="_blank" rel="noopener noreferrer">
         نمایش کد
