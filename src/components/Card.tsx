@@ -1,4 +1,5 @@
 import style from "./Card.module.css";
+import ExpandedText from "./ExpandedText";
 
 interface Props {
   title: string;
@@ -15,7 +16,9 @@ const Card = ({ title, image, description, code, link }: Props) => {
         <img src={image} alt={title} />
       </div>
       <h2 className={style.title}>{title}</h2>
-      <p>{description}</p>
+      <p>
+        <ExpandedText children={description} />
+      </p>
       <a href={code} target="_blank" rel="noopener noreferrer">
         نمایش کد
       </a>
