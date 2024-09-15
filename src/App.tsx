@@ -9,7 +9,7 @@ const App = () => {
         <Card
           key={p.title}
           title={p.title}
-          image={`public/${p?.picturs[0]}`}
+          images={p.picturs}
           description={p.description}
           code={p.code}
           link={p.link}
