@@ -1,10 +1,10 @@
 import Card from "../components/Card";
-import CardsLayouts from "../layouts/CardsLayouts";
+import Page2Layouts from "../layouts/Page2Layouts";
 import data from "../data/data.json";
 
 const Page2 = () => {
   return (
-    <CardsLayouts>
+    <Page2Layouts>
       {data.projects.map((p) => (
         <Card
           key={p.title}
@@ -15,7 +15,7 @@ const Page2 = () => {
           link={p.link}
         />
       ))}
-    </CardsLayouts>
+    </Page2Layouts>
   );
 };
 
