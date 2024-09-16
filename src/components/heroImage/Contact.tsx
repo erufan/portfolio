@@ -1,11 +1,19 @@
-import { FaLinkedin, FaMailBulk, FaTelegram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaMailBulk, FaTelegram } from "react-icons/fa";
+import style from "./Contact.module.css";
 
 const Contact = () => {
+  const icons = [
+    { Icon: FaLinkedin, key: "linkedin" },
+    { Icon: FaMailBulk, key: "mail" },
+    { Icon: FaTelegram, key: "telegram" },
+    { Icon: FaGithub, key: "github" },
+  ];
+
   return (
-    <div className="container">
-      <FaLinkedin color="white" />
-      <FaMailBulk color="white" />
-      <FaTelegram color="white" />
+    <div className={style.container}>
+      {icons.map(({ Icon, key }) => (
+        <Icon key={key} className={style.icon} />
+      ))}
     </div>
   );
 };
