@@ -1,21 +1,14 @@
-import data from "./data/data.json";
-import Card from "./components/Card";
-import CardsLayouts from "./layouts/CardsLayouts";
+import image from "../public/1680361354194_prev_ui-min.webp";
+import "./index.css";
 
 const App = () => {
   return (
-    <CardsLayouts>
-      {data.projects.map((p) => (
-        <Card
-          key={p.title}
-          title={p.title}
-          images={p.picturs}
-          description={p.description}
-          code={p.code}
-          link={p.link}
-        />
-      ))}
-    </CardsLayouts>
+    <div>
+      we are working in page 1
+      <div className="meCo">
+        <img src={image} alt="me" className="me" />
+      </div>
+    </div>
   );
 };
 
