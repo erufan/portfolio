@@ -1,6 +1,6 @@
 import ShowcaseImage from "./ShowcaseImage";
 import style from "./HeroImage.module.css";
-import content from "./content";
+import { content } from "./content";
 import Contact from "./Contact";
 
 const HeroImage = () => {
