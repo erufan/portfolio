@@ -1,10 +1,10 @@
-import ShowcaseImage from "../components/heroImage/ShowcaseImage";
+import HeroImage from "../components/heroImage/HeroImage";
 import Page1Layouts from "../layouts/Page1Layouts";
 
 const Page1 = () => {
   return (
     <Page1Layouts>
-      <ShowcaseImage />
+      <HeroImage />
     </Page1Layouts>
   );
 };
