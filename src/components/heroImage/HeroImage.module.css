@@ -1,0 +1,41 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  box-shadow: 0 4px 8px #1a2938, 0 6px 20px #0c3054;
+  background-color: transparent;
+  border-radius: 5%;
+  width: 60%;
+}
+
+.description {
+  color: var(--white);
+  font-family: "Vazirmatn", sans-serif;
+  padding: 5%;
+  display: inline-block;
+  text-align: justify;
+}
+
+.description p {
+  margin: 5% 0 0 0;
+}
+
+.graphicContainer {
+  height: 350px;
+  position: relative;
+}
+
+.graphicElement {
+  width: 100%;
+  height: 100%;
+  border-radius: 5% 0 0 5%;
+}
+
+@media only screen and (max-width: 426px) {
+  .container {
+    width: 100%;
+  }
+
+  .graphicElement {
+    border-radius: 0;
+  }
+}
