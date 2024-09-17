@@ -22,7 +22,7 @@ const Slider = ({ images }: Props) => {
       >
         {images.map((image) => (
           <SwiperSlide key={image}>
-            <img src={`public/${image}`} alt={image} />
+            <img src={`${image}`} alt={image} />
           </SwiperSlide>
         ))}
       </Swiper>
