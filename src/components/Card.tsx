@@ -13,10 +13,8 @@ interface Props {
 const Card = ({ title, images, description, code, link }: Props) => {
   return (
     <div className={style.gridItem}>
-      <div className={style.cardHeadr}>
-        <Slider images={images} />
-        <h2 className={style.title}>{title}</h2>
-      </div>
+      <Slider images={images} />
+      <h2 className={style.title}>{title}</h2>
       <div className={style.cardBody}>
         <a href={code} target="_blank" rel="noopener noreferrer">
           نمایش کد

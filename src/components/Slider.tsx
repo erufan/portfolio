@@ -18,6 +18,7 @@ const Slider = ({ images }: Props) => {
         }}
         modules={[Pagination]}
         className={style.imageContainer}
+        wrapperClass={style.wrapper}
       >
         {images.map((image) => (
           <SwiperSlide key={image}>

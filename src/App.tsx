@@ -11,7 +11,7 @@ export default function App() {
         <SwiperSlide>
           <Page1 />
         </SwiperSlide>
-        <SwiperSlide lazy={true}>
+        <SwiperSlide>
           <Page2 />
         </SwiperSlide>
       </Swiper>
