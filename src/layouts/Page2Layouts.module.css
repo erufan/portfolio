@@ -3,5 +3,4 @@
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 30px;
   margin-top: 5%;
-  background-color: var(--black);
 }
