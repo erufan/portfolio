@@ -1,6 +1,6 @@
 import Card from "../components/Card";
 import Page2Layouts from "../layouts/Page2Layouts";
-import data from "../data/data.json";
+import { data } from "../data/data";
 
 const Page2 = () => {
   return (
