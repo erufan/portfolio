@@ -11,7 +11,6 @@ export default function App() {
         slidesPerView="auto"
         spaceBetween={100}
         autoHeight={true}
-        direction="vertical"
         speed={2500}
       >
         <SwiperSlide>
