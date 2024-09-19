@@ -15,6 +15,17 @@
   text-align: justify;
 }
 
+.description h1 {
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--white);
+  transition: color 300ms;
+}
+
+.description h1:hover {
+  color: var(--green);
+}
+
 .description p {
   margin: 5% 0 0 0;
 }

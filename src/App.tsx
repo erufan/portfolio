@@ -7,7 +7,13 @@ import Page2 from "./slidePage/Page2";
 export default function App() {
   return (
     <>
-      <Swiper grabCursor={true} spaceBetween={100} autoHeight={true}>
+      <Swiper
+        slidesPerView="auto"
+        spaceBetween={100}
+        autoHeight={true}
+        direction="vertical"
+        speed={2500}
+      >
         <SwiperSlide>
           <Page1 />
         </SwiperSlide>
