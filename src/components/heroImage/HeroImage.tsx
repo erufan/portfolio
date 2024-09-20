@@ -1,8 +1,8 @@
-import ShowcaseImage from "./ShowcaseImage";
 import style from "./HeroImage.module.css";
 import { content } from "./content";
 import Contact from "./Contact";
 import { useSwiper } from "swiper/react";
+import ShowcaseImage from "./ShowcaseImage";
 
 const HeroImage = () => {
   const swiper = useSwiper();
@@ -15,11 +15,9 @@ const HeroImage = () => {
         <Contact />
       </div>
       <div className={style.graphicContainer}>
-        <ShowcaseImage image={content.showcaseImageLink} />
-        <img
-          src={content.graphicElementLink}
-          alt="graphic Element"
-          className={style.graphicElement}
+        <ShowcaseImage
+          image={content.showcaseImageLink}
+          graphicElement={content.graphicElementLink}
         />
       </div>
     </div>

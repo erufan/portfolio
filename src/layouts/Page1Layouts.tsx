@@ -1,5 +1,5 @@
-import { PropsWithChildren } from "react";
 import style from "./Page1Layouts.module.css";
+import { PropsWithChildren } from "react";
 
 const Page1Layouts = ({ children }: PropsWithChildren) => {
   return <div className={style.container}>{children}</div>;

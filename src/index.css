@@ -9,7 +9,7 @@
 
 body {
   padding: 3%;
-  background: linear-gradient(135deg, #1a2a4f, #03091b);
+  background: var(--backgroundTheme);
 }
 
 :root {
@@ -17,4 +17,5 @@ body {
   --green: #43dd50;
   --white: #e0e0e0;
   --black: #0d2422;
+  --backgroundTheme: linear-gradient(135deg, #1a2a4f, #03091b);
 }
