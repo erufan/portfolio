@@ -1,0 +1,14 @@
+.navigateToPrePage {
+  color: var(--white);
+  font-size: 24px;
+  font-family: "Vazirmatn", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  transition: 300ms color;
+  cursor: pointer;
+}
+
+.navigateToPrePage:hover {
+  color: var(--green);
+}
