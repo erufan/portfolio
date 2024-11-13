@@ -11,9 +11,10 @@ export default function App() {
     <>
       <Swiper
         slidesPerView="auto"
-        spaceBetween={100}
+        spaceBetween={500}
+        cssMode={true}
+        direction="vertical"
         autoHeight={true}
-        speed={2500}
       >
         <SwiperSlide>
           <Suspense fallback={<Loading />}>
