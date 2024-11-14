@@ -13,7 +13,7 @@ a {
 
 body {
   padding: 3%;
-  background: var(--backgroundTheme);
+  background: var(--backgroundTheme) no-repeat fixed;
 }
 
 :root {
