@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 
 import WorksPage from "./routes/WorksPage..tsx";
 import PagesTransition from "./transitions/PagesTransition.tsx";
@@ -22,6 +22,7 @@ const router = createBrowserRouter(
         </PagesTransition>
       ),
     },
+    { path: "*", element: <Navigate to="/" replace /> },
   ],
   {
     future: {
