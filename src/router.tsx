@@ -1,10 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
-import { lazy, Suspense } from "react";
-import Loading from "./components/loading/Loading.tsx";
 
-const HomePage = lazy(() => import("./routes/HomePage.tsx"));
 import WorksPage from "./routes/WorksPage..tsx";
 import PagesTransition from "./transitions/PagesTransition.tsx";
+import HomePage from "./routes/HomePage.tsx";
 
 const router = createBrowserRouter(
   [
@@ -12,9 +10,7 @@ const router = createBrowserRouter(
       path: "/",
       element: (
         <PagesTransition>
-          <Suspense fallback={<Loading />}>
-            <HomePage />
-          </Suspense>
+          <HomePage />
         </PagesTransition>
       ),
     },
