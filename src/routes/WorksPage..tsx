@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 const WorksPage = () => {
   return (
     <>
-      <Link to={"/"}>
-        <span className={style.navigateToPrePage}>بازگشت</span>
+      <Link to={"/"} className={style.navigateToPrePage}>
+        بازگشت
       </Link>
       <Page2Layouts>
         {data.projects.map((p) => (

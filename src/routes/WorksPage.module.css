@@ -7,6 +7,8 @@
   font-style: normal;
   transition: 300ms color;
   cursor: pointer;
+  display: inline-block;
+  margin: 20px 35px 5px 0;
 }
 
 .navigateToPrePage:hover {

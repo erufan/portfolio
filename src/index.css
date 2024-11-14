@@ -12,8 +12,15 @@ a {
 }
 
 body {
+  margin: 0;
   padding: 3%;
   background: var(--backgroundTheme) no-repeat fixed;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 5px;
+  }
 }
 
 :root {
