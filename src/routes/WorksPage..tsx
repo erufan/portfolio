@@ -1,20 +1,15 @@
-import style from "./Page2.module.css";
+import style from "./WorksPage.module.css";
 import Card from "../components/Card";
-import Page2Layouts from "../layouts/Page2Layouts";
+import Page2Layouts from "./layouts/WorksPage.Layouts";
 import { data } from "../data/data";
-import { useSwiper } from "swiper/react";
+import { Link } from "react-router-dom";
 
 const Page2 = () => {
-  const swiper = useSwiper();
-
   return (
     <>
-      <span
-        className={style.navigateToPrePage}
-        onClick={() => swiper.slidePrev()}
-      >
-        بازگشت
-      </span>
+      <Link to={"/"}>
+        <span className={style.navigateToPrePage}>بازگشت</span>
+      </Link>
       <Page2Layouts>
         {data.projects.map((p) => (
           <Card

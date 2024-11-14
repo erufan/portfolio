@@ -1,16 +1,16 @@
 import style from "./HeroImage.module.css";
 import { content } from "./content";
 import Contact from "./Contact";
-import { useSwiper } from "swiper/react";
 import ShowcaseImage from "./ShowcaseImage";
+import { Link } from "react-router-dom";
 
 const HeroImage = () => {
-  const swiper = useSwiper();
-
   return (
     <div className={style.container}>
       <div className={style.description}>
-        <h1 onClick={() => swiper.slideNext()}>{content.headr}</h1>
+        <Link to={"/works"}>
+          <h1>{content.headr}</h1>
+        </Link>
         <p>{content.story}</p>
         <Contact />
       </div>

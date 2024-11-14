@@ -1,5 +1,5 @@
 import HeroImage from "../components/heroImage/HeroImage";
-import Page1Layouts from "../layouts/Page1Layouts";
+import Page1Layouts from "./layouts/HomePage";
 
 const Page1 = () => {
   return (

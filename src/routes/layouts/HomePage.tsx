@@ -1,4 +1,4 @@
-import style from "./Page1Layouts.module.css";
+import style from "./HomePageLayouts.module.css";
 import { PropsWithChildren } from "react";
 
 const Page1Layouts = ({ children }: PropsWithChildren) => {
