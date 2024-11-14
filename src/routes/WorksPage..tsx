@@ -4,7 +4,7 @@ import Page2Layouts from "./layouts/WorksPage.Layouts";
 import { data } from "../data/data";
 import { Link } from "react-router-dom";
 
-const Page2 = () => {
+const WorksPage = () => {
   return (
     <>
       <Link to={"/"}>
@@ -26,4 +26,4 @@ const Page2 = () => {
   );
 };
 
-export default Page2;
+export default WorksPage;

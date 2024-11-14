@@ -1,7 +1,7 @@
 import HeroImage from "../components/heroImage/HeroImage";
 import Page1Layouts from "./layouts/HomePage";
 
-const Page1 = () => {
+const HomePage = () => {
   return (
     <Page1Layouts>
       <HeroImage />
@@ -9,4 +9,4 @@ const Page1 = () => {
   );
 };
 
-export default Page1;
+export default HomePage;

@@ -4,18 +4,28 @@ import Loading from "./components/loading/Loading.tsx";
 
 const HomePage = lazy(() => import("./routes/HomePage.tsx"));
 import WorksPage from "./routes/WorksPage..tsx";
+import PagesTransition from "./transitions/PagesTransition.tsx";
 
 const router = createBrowserRouter(
   [
     {
       path: "/",
       element: (
-        <Suspense fallback={<Loading />}>
-          <HomePage />
-        </Suspense>
+        <PagesTransition>
+          <Suspense fallback={<Loading />}>
+            <HomePage />
+          </Suspense>
+        </PagesTransition>
       ),
     },
-    { path: "/works", element: <WorksPage /> },
+    {
+      path: "/works",
+      element: (
+        <PagesTransition>
+          <WorksPage />
+        </PagesTransition>
+      ),
+    },
   ],
   {
     future: {
