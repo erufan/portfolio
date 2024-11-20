@@ -14,7 +14,7 @@ a {
 body {
   margin: 0;
   padding: 3%;
-  background: var(--backgroundTheme) no-repeat fixed;
+  background: var(--backgroundTheme);
 }
 
 @media (max-width: 768px) {
