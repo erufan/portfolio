@@ -9,10 +9,16 @@
   color: var(--white);
   cursor: pointer;
   transition: 300ms color;
-  font-size: 24px;
+  font-size: 2vw;
   vertical-align: middle;
 }
 
 .icon:hover {
   color: var(--green);
+}
+
+@media only screen and (max-width: 426px) {
+  .icon {
+    font-size: 24px;
+  }
 }

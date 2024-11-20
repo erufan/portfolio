@@ -9,6 +9,7 @@
   cursor: pointer;
   display: inline-block;
   margin: 20px 35px 5px 0;
+  background: var(--backgroundTheme) no-repeat fixed;
 }
 
 .navigateToPrePage:hover {

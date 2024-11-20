@@ -5,6 +5,7 @@
   background-color: transparent;
   border-radius: 5%;
   width: 60%;
+  min-height: 60vh;
 }
 
 .description {
@@ -13,6 +14,9 @@
   padding: 5%;
   display: inline-block;
   text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .description h1 {
@@ -28,22 +32,34 @@
 
 .description p {
   margin: 5% 0 0 0;
+  font-size: 1.2vw;
+}
+
+.description h1 {
+  font-size: 2vw;
+}
+
+.description a {
+  font-size: 2vw;
 }
 
 .graphicContainer {
-  height: 350px;
-  position: relative;
-}
-
-.graphicElement {
-  width: 100%;
   height: 100%;
-  border-radius: 5% 0 0 5%;
+  position: relative;
 }
 
 @media only screen and (max-width: 426px) {
   .container {
     width: 100%;
+  }
+
+  .description p {
+    margin: 5% 0 0 0;
+    font-size: 1.2rem;
+  }
+
+  .description h1 {
+    font-size: 1.7rem;
   }
 
   .graphicElement {
