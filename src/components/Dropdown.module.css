@@ -2,28 +2,52 @@
   position: relative;
   display: inline-block;
   font-size: 1.1rem;
+  margin: 0 0.3rem;
 }
 
-.container .trigger {
-  font-size: 1.01rem;
+.trigger {
+  font-size: 2.01rem;
   border-radius: 5%;
   border: none;
   padding: 0.5rem 0.9rem;
+  color: var(--white);
+  background-color: transparent;
+  transition: color 0.3s;
+  cursor: pointer;
 }
 
-.container .content {
-  background-color: red;
+.trigger:hover {
+  color: var(--green);
+}
+
+.content {
   position: absolute;
   flex-direction: column;
-  margin-top: 0.2rem;
+  margin: 0.2rem;
   border-radius: 5%;
   display: none;
 }
 
-.container .contentShow {
+.contentShow {
   display: flex;
+  padding: 0;
 }
 
-.content .item {
+.item {
   padding: 0.5rem 0.9rem;
+  border: none;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.item:hover {
+  color: var(--green);
+  transition: color 0.3s;
+}
+
+.active {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  transform: scale(1.1);
 }

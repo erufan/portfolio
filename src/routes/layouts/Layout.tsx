@@ -1,11 +1,12 @@
 import { Outlet } from "react-router-dom";
 import Dropdown from "../../components/Dropdown";
+import languages from "../../data/languages";
 
 const Layout = () => {
   return (
     <>
       <header>
-        <Dropdown />
+        <Dropdown items={languages} />
       </header>
       <Outlet />
     </>

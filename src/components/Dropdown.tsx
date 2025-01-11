@@ -1,36 +1,61 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import style from "./Dropdown.module.css";
+import { LuLanguages } from "react-icons/lu";
 
-const Dropdown = () => {
-  const languages = [
-    { value: "fa", content: "فارسی" },
-    { value: "en", content: "english" },
-  ];
-  const [lang, setLang] = useState(languages[0]);
-  const [show, setShow] = useState(false);
+interface MenuItems {
+  value: string | number;
+  content: string;
+}
+
+interface Props {
+  items: MenuItems[];
+}
+
+const Dropdown = ({ items }: Props) => {
+  const [selectedItem, setSelectedItem] = useState(items[0]);
+  const [isShow, setIsShow] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement | null>(null);
+
+  const handleBlur = (e: React.FocusEvent<HTMLDivElement, Element>) =>
+    dropdownRef.current &&
+    !dropdownRef.current.contains(e.relatedTarget as Node) &&
+    setIsShow(false);
+
+  const handleChoose = (item: typeof selectedItem) => {
+    setSelectedItem(item);
+    setIsShow(false);
+  };
+
+  const isActive = (item: typeof selectedItem): boolean =>
+    selectedItem.content === item.content;
 
   return (
-    <div
-      className={style.container}
-      onBlur={(e) => {
-        e.stopPropagation();
-        setShow(false);
-      }}
-    >
-      <button className={style.trigger} onFocus={() => setShow(true)}>
-        {lang.content}
+    <div className={style.container} onBlur={handleBlur} ref={dropdownRef}>
+      <button
+        className={style.trigger}
+        onClick={() => setIsShow(!isShow)}
+        aria-haspopup="true"
+        aria-expanded={isShow}
+      >
+        <LuLanguages aria-label="Select language" />
       </button>
-      <div className={`${style.content} ${show && style.contentShow}`}>
-        {languages.map((language) => (
-          <span
-            className={style.item}
-            key={language.value}
-            onMouseDown={() => setLang(language)}
+      <ul
+        className={`${style.content} ${isShow && style.contentShow}`}
+        role="menu"
+      >
+        {items.map((item) => (
+          <li
+            className={`${style.item} ${isActive(item) && style.active}`}
+            key={item.value}
+            onClick={() => handleChoose(item)}
+            onKeyDown={(e) => e.key === "Enter" && handleChoose(item)}
+            tabIndex={isShow ? 0 : -1}
+            role="menuitem"
           >
-            {language.content}
-          </span>
+            {item.content}
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 };
