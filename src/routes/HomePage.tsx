@@ -1,11 +1,11 @@
 import HeroImage from "../components/heroImage/HeroImage";
-import Page1Layouts from "./layouts/HomePage";
+import HomePageLayouts from "./layouts/HomePageLayouts";
 
 const HomePage = () => {
   return (
-    <Page1Layouts>
+    <HomePageLayouts>
       <HeroImage />
-    </Page1Layouts>
+    </HomePageLayouts>
   );
 };
 
