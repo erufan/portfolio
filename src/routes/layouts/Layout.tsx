@@ -1,9 +1,12 @@
 import { Outlet } from "react-router-dom";
+import Dropdown from "../../components/Dropdown";
 
 const Layout = () => {
   return (
     <>
-      <header>header</header>
+      <header>
+        <Dropdown />
+      </header>
       <Outlet />
     </>
   );

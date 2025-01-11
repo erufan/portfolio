@@ -1,0 +1,29 @@
+.container {
+  position: relative;
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+.container .trigger {
+  font-size: 1.01rem;
+  border-radius: 5%;
+  border: none;
+  padding: 0.5rem 0.9rem;
+}
+
+.container .content {
+  background-color: red;
+  position: absolute;
+  flex-direction: column;
+  margin-top: 0.2rem;
+  border-radius: 5%;
+  display: none;
+}
+
+.container .contentShow {
+  display: flex;
+}
+
+.content .item {
+  padding: 0.5rem 0.9rem;
+}
