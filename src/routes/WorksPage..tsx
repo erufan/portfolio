@@ -8,7 +8,7 @@ const WorksPage = () => {
   return (
     <>
       <Link to={"/"} className={style.navigateToPrePage}>
-        بازگشت
+        خانه
       </Link>
       <WorksPageLayouts>
         {data.projects.map((p) => (
