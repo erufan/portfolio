@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const WorksPage = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <>
       <Link to={"/"} className={style.navigateToPrePage}>
-        بازگشت
+        {t("Home")}
       </Link>
       <WorksPageLayouts>
         {data.projects.map((p) => (

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import style from "./Card.module.css";
 import ExpandedText from "./ExpandedText";
 import Slider from "./Slider";
@@ -11,16 +12,18 @@ interface Props {
 }
 
 const Card = ({ title, images, description, code, link }: Props) => {
+  const { t } = useTranslation();
+
   return (
     <div className={style.gridItem}>
       <Slider images={images} />
       <h2 className={style.title}>{title}</h2>
       <div className={style.cardBody}>
         <a href={code} target="_blank" rel="noopener noreferrer">
-          نمایش کد
+          {t("ViewCode")}
         </a>
         <a href={link} target="_blank" rel="noopener noreferrer">
-          مشاهده پروژه
+          {t("ViewProject")}
         </a>
         <p className={style.description}>
           <ExpandedText children={description} />
