@@ -2,16 +2,17 @@ import { useState, useRef } from "react";
 import style from "./Dropdown.module.css";
 import { LuLanguages } from "react-icons/lu";
 
-interface MenuItems {
+export interface MenuItems {
   value: string | number;
   content: string;
 }
 
 interface Props {
   items: MenuItems[];
+  callBack: (item: MenuItems) => void;
 }
 
-const Dropdown = ({ items }: Props) => {
+const Dropdown = ({ items, callBack }: Props) => {
   const [selectedItem, setSelectedItem] = useState(items[0]);
   const [isShow, setIsShow] = useState(false);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
@@ -24,6 +25,7 @@ const Dropdown = ({ items }: Props) => {
   const handleChoose = (item: typeof selectedItem) => {
     setSelectedItem(item);
     setIsShow(false);
+    callBack(item);
   };
 
   const isActive = (item: typeof selectedItem): boolean =>
