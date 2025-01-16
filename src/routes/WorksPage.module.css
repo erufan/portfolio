@@ -14,3 +14,7 @@
 .navigateToPrePage:hover {
   color: var(--green);
 }
+
+.hide {
+  visibility: hidden;
+}

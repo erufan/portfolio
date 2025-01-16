@@ -5,9 +5,12 @@ import { RouterProvider } from "react-router-dom";
 import router from "./router";
 
 import "./i18n";
+import { LangugeDropdownProvider } from "./context/LangugeDropDownContext";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router} future={{ v7_startTransition: true }} />
+    <LangugeDropdownProvider>
+      <RouterProvider router={router} future={{ v7_startTransition: true }} />
+    </LangugeDropdownProvider>
   </React.StrictMode>
 );

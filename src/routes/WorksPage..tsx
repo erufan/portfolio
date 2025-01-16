@@ -4,13 +4,22 @@ import WorksPageLayouts from "./layouts/WorksPageLayouts";
 import { data } from "../data/data";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useContext } from "react";
+import { LangugeDropdownContext } from "../context/LangugeDropDownContext";
 
 const WorksPage = () => {
   const { t, i18n } = useTranslation();
+  const { isActiveDropdown } = useContext(LangugeDropdownContext);
+
+  console.log(isActiveDropdown);
 
   return (
     <>
-      <Link to={"/"} className={style.navigateToPrePage}>
+      <Link
+        to={"/"}
+        className={`${style.navigateToPrePage} 
+          ${isActiveDropdown && style.hide}`}
+      >
         {t("Home")}
       </Link>
       <WorksPageLayouts>
