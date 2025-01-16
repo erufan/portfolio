@@ -3,23 +3,14 @@ import Card from "./components/Card";
 import WorksPageLayouts from "./WorksPageLayouts";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { useContext } from "react";
-import { LangugeDropdownContext } from "../../contexts/LangugeDropdownContext";
 import { works } from "./data/works";
 
 const WorksPage = () => {
   const { t, i18n } = useTranslation();
-  const { isActiveDropdown } = useContext(LangugeDropdownContext);
-
-  console.log(isActiveDropdown);
 
   return (
     <>
-      <Link
-        to={"/"}
-        className={`${style.navigateToPrePage} 
-          ${isActiveDropdown && style.hide}`}
-      >
+      <Link to={"/"} className={style.navigateToPrePage}>
         {t("Home")}
       </Link>
       <WorksPageLayouts>
