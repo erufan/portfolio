@@ -1,5 +1,5 @@
+import { icons } from "../data/content";
 import style from "./Contact.module.css";
-import { icons } from "./content";
 
 const Contact = () => {
   return (

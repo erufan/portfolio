@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import style from "./Card.module.css";
-import ExpandedText from "./ExpandedText";
+import ExpandedText from "../../../components/ExpandedText";
 import Slider from "./Slider";
 
 interface Props {

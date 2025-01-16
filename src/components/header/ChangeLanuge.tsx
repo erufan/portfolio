@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
-import Dropdown, { MenuItems } from "./Dropdown";
-import languages from "../data/languages";
+import Dropdown, { MenuItems } from "../Dropdown";
+import languages from "../../data/languages";
 import { useContext } from "react";
-import { LangugeDropdownContext } from "../context/LangugeDropDownContext";
+import { LangugeDropdownContext } from "../../contexts/LangugeDropdownContext";
 
 const ChangeLanuge = () => {
   const { i18n } = useTranslation();

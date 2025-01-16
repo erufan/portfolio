@@ -1,9 +1,9 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 
-import WorksPage from "./routes/WorksPage..tsx";
-import HomePage from "./routes/HomePage.tsx";
-import Layout from "./routes/layouts/Layout.tsx";
+import WorksPage from "./routes/WorksPage/WorksPage..tsx";
+import HomePage from "./routes/HomePage/HomePage.tsx";
 import PagesTransition from "./transitions/PagesTransition.tsx";
+import Layout from "./routes/Layout.tsx";
 
 const router = createBrowserRouter(
   [

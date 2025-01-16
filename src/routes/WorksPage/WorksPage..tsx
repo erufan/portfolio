@@ -1,11 +1,11 @@
 import style from "./WorksPage.module.css";
-import Card from "../components/Card";
-import WorksPageLayouts from "./layouts/WorksPageLayouts";
-import { data } from "../data/data";
+import Card from "./components/Card";
+import WorksPageLayouts from "./WorksPageLayouts";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useContext } from "react";
-import { LangugeDropdownContext } from "../context/LangugeDropDownContext";
+import { LangugeDropdownContext } from "../../contexts/LangugeDropdownContext";
+import { works } from "./data/works";
 
 const WorksPage = () => {
   const { t, i18n } = useTranslation();
@@ -23,7 +23,7 @@ const WorksPage = () => {
         {t("Home")}
       </Link>
       <WorksPageLayouts>
-        {data.projects.map((p) => (
+        {works.projects.map((p) => (
           <Card
             key={p.title.en}
             title={p.title[i18n.language as keyof typeof p.title]}

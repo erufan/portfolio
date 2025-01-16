@@ -5,7 +5,7 @@ import { RouterProvider } from "react-router-dom";
 import router from "./router";
 
 import "./i18n";
-import { LangugeDropdownProvider } from "./context/LangugeDropDownContext";
+import { LangugeDropdownProvider } from "./contexts/LangugeDropdownContext";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

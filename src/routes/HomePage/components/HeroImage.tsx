@@ -1,9 +1,9 @@
 import style from "./HeroImage.module.css";
-import { content } from "./content";
 import Contact from "./Contact";
 import ShowcaseImage from "./ShowcaseImage";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { content } from "../data/content";
 
 const HeroImage = () => {
   const { i18n } = useTranslation();

@@ -1,12 +1,10 @@
 import { Outlet } from "react-router-dom";
-import ChangeLanuge from "../../components/ChangeLanuge";
+import Header from "../components/header/Header";
 
 const Layout = () => {
   return (
     <>
-      <header>
-        <ChangeLanuge />
-      </header>
+      <Header />
       <Outlet />
     </>
   );
