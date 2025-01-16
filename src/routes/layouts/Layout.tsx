@@ -1,18 +1,11 @@
 import { Outlet } from "react-router-dom";
-import Dropdown, { MenuItems } from "../../components/Dropdown";
-import languages from "../../data/languages";
-import { useTranslation } from "react-i18next";
+import ChangeLanuge from "../../components/ChangeLanuge";
 
 const Layout = () => {
-  const { i18n } = useTranslation();
-  const changeLanguageHandler = (item: MenuItems) => {
-    i18n.changeLanguage(item.value as string);
-  };
-
   return (
     <>
       <header>
-        <Dropdown items={languages} callBack={changeLanguageHandler} />
+        <ChangeLanuge />
       </header>
       <Outlet />
     </>
