@@ -1,11 +1,11 @@
 import style from "./ShowcaseImage.module.css";
 
-interface Prop {
+interface Props {
   image: string;
   graphicElement: string;
 }
 
-const ShowcaseImage = ({ image, graphicElement }: Prop) => {
+const ShowcaseImage = ({ image, graphicElement }: Props) => {
   return (
     <>
       <div className={style.container}>

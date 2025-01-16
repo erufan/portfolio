@@ -1,11 +1,7 @@
 import { useState, useRef } from "react";
 import style from "./Dropdown.module.css";
 import { LuLanguages } from "react-icons/lu";
-
-export interface MenuItems {
-  value: string | number;
-  content: string;
-}
+import MenuItems from "../interface/MenuItems";
 
 interface Props {
   items: MenuItems[];
