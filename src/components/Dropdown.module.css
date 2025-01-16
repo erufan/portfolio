@@ -24,6 +24,7 @@
   position: absolute;
   flex-direction: column;
   margin: 0.2rem;
+  background: var(--backgroundTheme);
   border-radius: 5%;
   display: none;
 }
