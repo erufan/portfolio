@@ -10,9 +10,11 @@ const HeroImage = () => {
   return (
     <div className={style.container}>
       <div className={style.description}>
-        <Link to={"/works"} dir="auto">
-          {content.headr[i18n.language as keyof typeof content.headr]}
-        </Link>
+        <div dir="auto">
+          <Link to={"/works"}>
+            {content.headr[i18n.language as keyof typeof content.headr]}
+          </Link>
+        </div>
         <p dir="auto">
           {content.story[i18n.language as keyof typeof content.story]}
         </p>
