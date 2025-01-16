@@ -31,6 +31,7 @@ const ExpandedText = ({ children }: Props) => {
         style={spanStyle}
         aria-expanded={isExpanded}
         aria-controls="expanded-text"
+        dir="auto"
       >
         {isExpanded ? open : close}
       </span>

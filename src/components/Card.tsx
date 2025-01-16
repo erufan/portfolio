@@ -25,7 +25,7 @@ const Card = ({ title, images, description, code, link }: Props) => {
         <a href={link} target="_blank" rel="noopener noreferrer">
           {t("ViewProject")}
         </a>
-        <p className={style.description}>
+        <p className={style.description} dir="auto">
           <ExpandedText children={description} />
         </p>
       </div>
