@@ -1,9 +1,11 @@
 import { FaLinkedin, FaMailBulk, FaTelegram, FaGithub } from "react-icons/fa";
 
 export const content = {
-  headr: "مشاهده  نمونه کارها",
-  story:
-    "سلام. من عرفان طاهری هستم، front-end web developer با تجربه در React و TypeScript پروژه‌های خلاقانه و کارآمدی را ایجاد می‌کنم. اگر به دنبال یک توسعه‌دهنده هستید که بتواند ایده‌های شما را به واقعیت تبدیل کند، با من تماس بگیرید!",
+  headr: { fa: "مشاهده  نمونه کارها", en: "See Works" },
+  story: {
+    fa: "سلام. من عرفان طاهری هستم، front-end web developer با تجربه در React و TypeScript پروژه‌های خلاقانه و کارآمدی را ایجاد می‌کنم. اگر به دنبال یک توسعه‌دهنده هستید که بتواند ایده‌های شما را به واقعیت تبدیل کند، با من تماس بگیرید!",
+    en: "Hello. I'm Erfan Taheri, a front-end web developer with experience in React and TypeScript. I create innovative and efficient projects. If you're looking for a developer who can bring your ideas to life, please contact me.",
+  },
   showcaseImageLink: "/mySelf.webp",
   graphicElementLink: "/GraphicElement.webp",
 };

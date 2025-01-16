@@ -3,15 +3,17 @@ import { content } from "./content";
 import Contact from "./Contact";
 import ShowcaseImage from "./ShowcaseImage";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const HeroImage = () => {
+  const { i18n } = useTranslation();
   return (
     <div className={style.container}>
       <div className={style.description}>
         <Link to={"/works"}>
-          <h1>{content.headr}</h1>
+          <h1>{content.headr[i18n.language as keyof typeof content.headr]}</h1>
         </Link>
-        <p>{content.story}</p>
+        <p>{content.story[i18n.language as keyof typeof content.story]}</p>
         <Contact />
       </div>
       <div className={style.graphicContainer}>
