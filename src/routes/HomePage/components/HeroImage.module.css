@@ -19,28 +19,21 @@
   justify-content: space-evenly;
 }
 
-.description h1 {
-  font-size: 24px;
+.description a {
+  font-size: 2vw;
   cursor: pointer;
   color: var(--white);
   transition: color 300ms;
+  width: max-content;
 }
 
-.description h1:hover {
+.description a:hover {
   color: var(--green);
 }
 
 .description p {
   margin: 5% 0 0 0;
   font-size: 1.2vw;
-}
-
-.description h1 {
-  font-size: 2vw;
-}
-
-.description a {
-  font-size: 2vw;
 }
 
 .graphicContainer {
